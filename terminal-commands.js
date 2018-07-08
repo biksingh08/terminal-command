@@ -11,7 +11,7 @@ module.exports.ls = () => {
 };
 
 module.exports.touch = (userInput) => {
-  fs.writeFile(`${userInput}`, 'new file', function (err) {
+  fs.writeFile(`${userInput}`, '', function (err) {
     if (err)
         return console.log(err);
     console.log(`${userInput} created`);
